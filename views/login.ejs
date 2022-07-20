@@ -1,44 +1,46 @@
 <%- include('partials/header') %>
+<div class="box">
+  <div class="container mt-5">
+    <h1>Login</h1>
 
-<div class="container mt-5">
-  <h1>Login</h1>
+    <div class="row">
+      <div class="col-sm-8">
+        <a href="/auth/google" class="btn btn-danger btn-block"><i class="fab fa-google"></i> Login in with <b>Google</b></a>
+        <p class="center"><br></p
+        <div class="card">
+          <div class="card-body">
 
-  <div class="row">
-    <div class="col-sm-8">
-      <a href="/auth/google" class="btn btn-danger btn-block"><i class="fab fa-google"></i> Login in with <b>Google</b></a>
-      <p class="center"><br></p
-      <div class="card">
-        <div class="card-body">
+            <!-- Makes POST request to /login route -->
+            <form action="/login" method="POST">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="username" placeholder="Email or Username" autofocus>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-dark">Login</button>
+            </form>
 
-          <!-- Makes POST request to /login route -->
-          <form action="/login" method="POST">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" name="username" placeholder="Email or Username" autofocus>
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" class="form-control" name="password" placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn-dark">Login</button>
-          </form>
-
+          </div>
         </div>
       </div>
+
+      <!-- <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <a class="btn btn-block" href="/auth/google" role="button">
+              <i class="fab fa-google"></i>
+              Sign In with Google
+            </a>
+          </div>
+        </div>
+      </div> -->
+
     </div>
-
-    <!-- <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <a class="btn btn-block" href="/auth/google" role="button">
-            <i class="fab fa-google"></i>
-            Sign In with Google
-          </a>
-        </div>
-      </div>
-    </div> -->
-
   </div>
 </div>
+
 
 <%- include('partials/footer') %>

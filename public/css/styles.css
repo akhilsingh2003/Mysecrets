@@ -73,3 +73,7 @@ background-color: #E8ECEF;
 #sticky-footer {
   flex-shrink: none;
 }
+
+.home-text{
+  background-color: grey;
+}
