@@ -53,7 +53,8 @@ background-color: #E8ECEF;
 }
 
 .secret-text {
-  text-align: center;
+  text-align: left;
+  min-width: 500px;
   padding-left: 5px;
   padding-right: 5px;
   font-size: 1rem;
